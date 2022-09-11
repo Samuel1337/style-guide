@@ -5,6 +5,23 @@ import './page.scss';
 class Page extends React.Component {
     props() {
         this.scrollUp = this.scrollUp.bind(this);
+        this.switchTabs = this.switchTabs.bind(this);
+    }
+
+    switchTabs(id) {
+        const newActiveLi = document.getElementById(id + "-li");
+        const newActiveTab = document.getElementById(id + "-tab");
+        
+        const oldActiveLi = document.querySelector(".active-li");
+        const oldActiveTab = document.querySelector(".active-tab");
+
+        if (newActiveLi.id === oldActiveLi.id) return null;
+
+        newActiveLi.classList.add("active-li");
+        newActiveTab.classList.add("active-tab");
+
+        oldActiveLi.classList.remove("active-li");
+        oldActiveTab.classList.remove("active-tab");
     }
 
     scrollUp() {
@@ -18,39 +35,82 @@ class Page extends React.Component {
                     <h1><span>C</span>ABLE, THE <span>G</span>OLDEN <span>G</span>ATE <span>M</span>USICAL</h1>
                 </div>
                 <div className="page-container">
+                    <a href="#home">
                     <ul className="list">
-                        <li>Who we are</li>
-                        <li>The Story</li>
-                        <li>Characters</li>
-                        <li>Attributes</li>
-                        <li>Logo</li>
-                        <li>Artwork</li>
-                        <li>Music</li>
-                        <li>Portfolio</li>
+                        <li
+                            id="who-we-are-li"
+                            className="active-li"
+                            onClick={()=>this.switchTabs("who-we-are")}
+                        >
+                            Who we are
+                        </li>
+                        <li
+                            id="the-story-li"
+                            onClick={()=>this.switchTabs("the-story")}
+                        >
+                            The Story
+                        </li>
+                        <li
+                            id="characters-li"
+                            onClick={()=>this.switchTabs("characters")}
+                        >
+                            Characters
+                        </li>
+                        <li
+                            id="attributes-li"
+                            onClick={()=>this.switchTabs("attributes")}
+                        >
+                            Attributes
+                        </li>
+                        <li
+                            id="logo-li"
+                            onClick={()=>this.switchTabs("logo")}
+                        >
+                            Logo
+                        </li>
+                        <li
+                            id="artwork-li"
+                            onClick={()=>this.switchTabs("artwork")}
+                        >
+                            Artwork
+                        </li>
+                        <li
+                            id="music-li"
+                            onClick={()=>this.switchTabs("music")}
+                        >
+                            Music
+                        </li>
+                        <li
+                            id="portfolio-li"
+                            onClick={()=>this.switchTabs("portfolio")}
+                        >
+                            Portfolio
+                        </li>
                     </ul>
+                    </a>
                     <div className="tab-container">
-                        <div className="who-we-are-tab">
+                        <div id="who-we-are-tab" className="active-tab">
                             <h1>Who we are</h1>
                         </div>
-                        <div className="the-story-tab">
+                        <div id="the-story-tab">
                             <h1>The Story</h1>
                         </div>
-                        <div className="characters-tab">
+                        <div id="characters-tab">
                             <h1>Characters</h1>
                         </div>
-                        <div className="attributes-tab">
+                        <div id="attributes-tab">
                             <h1>Attributes</h1>
                         </div>
-                        <div className="logo-tab">
+                        <div id="logo-tab">
                             <h1>Logo</h1>
                         </div>
-                        <div className="artwork-tab">
+                        <div id="artwork-tab">
                             <h1>Artwork</h1>
                         </div>
-                        <div className="music-tab">
+                        <div id="music-tab">
                             <h1>Music</h1>
                         </div>
-                        <div className="portfolio-tab">
+                        <div id="portfolio-tab">
                             <h1>Portfolio</h1>
                         </div>
                     </div>

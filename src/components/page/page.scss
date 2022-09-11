@@ -1,5 +1,12 @@
 $red: #c0362c;
 $sub-red: #74201A;
+$light-red: #D55248;
+$lighter-red: #D96159;
+$light-charcoal: #464F5D;
+$charcoal: #353b45;
+$gunmetal: #282C34;
+$raisin-black: #21252C;
+$eerie-black: #1a1d23;
 
 .page {
     width: 100%;
@@ -28,6 +35,11 @@ $sub-red: #74201A;
             font-size: 30px;
         }
     }
+    
+    h1:hover {
+        cursor: pointer;
+    }
+
     img {
         margin: 1em;
         width: 300px;
@@ -56,26 +68,42 @@ ul {
         padding-right: 2em;
         padding-left: 1em;
         white-space: nowrap;
+        transition-duration: 0.25s;
+        color: $gunmetal;
     }
     li:hover {
         cursor: pointer;
-        color:rgba(0, 0, 0, 0.5)
+        opacity: 0.5;
     }
 }
 
 .tab-container {
     width: 100%;
-    padding-left: 2em;
-    padding-right: 1em;
-    background-color: bisque;
+    padding-inline: 2em;
 }
 
 .tab-container div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    visibility: hidden;
+    height: 0px;
+
+    h1 {
+        font-size: 40px;
+    }
 
     h1:hover {
         cursor: default;
     }
+}
+
+.active-li {
+    color: $red;
+}
+
+.tab-container .active-tab {
+    visibility: visible;
+    height: fit-content;
+    min-height: 100%;
 }

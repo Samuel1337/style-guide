@@ -14,11 +14,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img className="background" src={background} />
+          <img className="background" src={background}/>
+          <a href="#home"  className='cable-top'>
+            <h1>Cable<span>®</span></h1>
+          </a>
           <div className='opening-text'>
-            <a href="#home">
-              <h1>Cable</h1>
-            </a>
             <a href="#home">
               <h1 className='emphasis'>STYLE GUIDE.</h1>
             </a>

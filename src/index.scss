@@ -17,9 +17,10 @@ h1 {
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
-    font-size: 54px;
+    font-size: 72px;
     font-weight: 500;
     margin: 0.2em;
+    white-space: nowrap;
 }
 
 .opening-text h1:hover {
@@ -30,12 +31,24 @@ h1 {
     position: absolute;
 }
 
+.cable-top {
+    position: absolute;
+    top: 0px;
+    h1 {
+        font-size: 68px;
+    }
+
+    span {
+        font-size: 52px;
+        font-weight: 300;
+    }
+}
+
 a {
     text-decoration: none;
     color: white;
 }
 
-// #6F97C6
 .emphasis {
     background-color: $gunmetal;
     padding: 0.1em;
