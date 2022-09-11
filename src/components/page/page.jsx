@@ -16,10 +16,8 @@ class Page extends React.Component {
             <div className="page">
                 <div className="page-header" id= "home" onClick={this.scrollUp}>
                     <h1><span>C</span>ABLE, THE <span>G</span>OLDEN <span>G</span>ATE <span>M</span>USICAL</h1>
-                    {/* <h1>Cable, the Golden Gate Musical</h1> */}
                 </div>
-                <div className="list-container">
-                    <h1></h1>
+                <div className="page-container">
                     <ul className="list">
                         <li>Who we are</li>
                         <li>The Story</li>
@@ -31,8 +29,30 @@ class Page extends React.Component {
                         <li>Portfolio</li>
                     </ul>
                     <div className="tab-container">
-                        <div className="about-us-tab"></div>
-                        <div className="logo-tab"></div>
+                        <div className="who-we-are-tab">
+                            <h1>Who we are</h1>
+                        </div>
+                        <div className="the-story-tab">
+                            <h1>The Story</h1>
+                        </div>
+                        <div className="characters-tab">
+                            <h1>Characters</h1>
+                        </div>
+                        <div className="attributes-tab">
+                            <h1>Attributes</h1>
+                        </div>
+                        <div className="logo-tab">
+                            <h1>Logo</h1>
+                        </div>
+                        <div className="artwork-tab">
+                            <h1>Artwork</h1>
+                        </div>
+                        <div className="music-tab">
+                            <h1>Music</h1>
+                        </div>
+                        <div className="portfolio-tab">
+                            <h1>Portfolio</h1>
+                        </div>
                     </div>
                 </div>    
 
