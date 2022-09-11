@@ -14,9 +14,14 @@ $sub-red: #74201A;
     background-color: $red;
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);
     h1 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
         color: white;
         font-size: 27px;
         margin: 0.5em;
+        span {
+            font-size: 30px;
+        }
     }
     img {
         margin: 1em;

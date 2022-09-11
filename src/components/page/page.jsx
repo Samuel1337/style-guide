@@ -14,18 +14,21 @@ class Page extends React.Component {
     render() {
         return (
             <div className="page">
-                <div className="page-header" id= "page-header" onClick={this.scrollUp}>
-                    <h1>Cable, the Golden Gate Musical</h1>
+                <div className="page-header" id= "home" onClick={this.scrollUp}>
+                    <h1><span>C</span>ABLE, THE <span>G</span>OLDEN <span>G</span>ATE <span>M</span>USICAL</h1>
+                    {/* <h1>Cable, the Golden Gate Musical</h1> */}
                 </div>
                 <div className="list-container">
                     <h1></h1>
                     <ul className="list">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Who we are</li>
+                        <li>The Story</li>
+                        <li>Characters</li>
+                        <li>Attributes</li>
+                        <li>Logo</li>
+                        <li>Artwork</li>
+                        <li>Music</li>
+                        <li>Portfolio</li>
                     </ul>
                     <div className="tab-container">
                         <div className="about-us-tab"></div>

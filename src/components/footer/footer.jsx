@@ -1,5 +1,5 @@
 import React from "react";
-import redLogo from '../../images/logos/cable-logo-red.png';
+import redLogo from '../../images/logos/cable-logo-transparent-white.png';
 import './footer.scss';
 
 class Footer extends React.Component {
@@ -15,7 +15,7 @@ class Footer extends React.Component {
         return (
             <div className="footer">
                 <div className="back-to-top" onClick={this.scrollUp}>
-                    Back to top
+                    <span>B</span>ACK TO TOP
                 </div>
                 <div className="logo-container">
                     <img src={redLogo} />

@@ -1,3 +1,5 @@
+$gunmetal: #282C34;
+
 .background {
     width: 100%;
     height: 100vh;
@@ -33,8 +35,9 @@ a {
     color: white;
 }
 
+// #6F97C6
 .emphasis {
-    background-color: #6F97C6;
+    background-color: $gunmetal;
     padding: 0.1em;
 }
 
