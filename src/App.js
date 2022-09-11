@@ -25,6 +25,7 @@ class App extends React.Component {
             </a>
           </div>
         </header>
+        <div id='home'/>
         <Page />
         <Footer />
       </div>

@@ -22,8 +22,8 @@ $eerie-black: #1a1d23;
     position: sticky;
     top: 0;
     background-color: $red;
-    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);
-    z-index: 2;    
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+    z-index: 3;    
     
     h1 {
         font-family: 'Oswald', sans-serif;
@@ -45,6 +45,14 @@ $eerie-black: #1a1d23;
         width: 300px;
         height: 300px;
     }
+}
+
+.fog {
+    z-index: 2;
+    width: 70%;
+    box-shadow: 0px 32px 32px 32px white;
+    position: sticky;
+    top: 2em;
 }
 
 .page-container {
@@ -106,4 +114,14 @@ ul {
     visibility: visible;
     height: fit-content;
     min-height: 100%;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

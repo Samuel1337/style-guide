@@ -31,9 +31,10 @@ class Page extends React.Component {
     render() {
         return (
             <div className="page">
-                <div className="page-header" id= "home" onClick={this.scrollUp}>
+                <div className="page-header" onClick={this.scrollUp}>
                     <h1><span>C</span>ABLE, THE <span>G</span>OLDEN <span>G</span>ATE <span>M</span>USICAL</h1>
                 </div>
+                <div className="fog" />
                 <div className="page-container">
                     <a href="#home">
                     <ul className="list">
@@ -115,7 +116,6 @@ class Page extends React.Component {
                         </div>
                     </div>
                 </div>    
-
             </div>
         )
     }
