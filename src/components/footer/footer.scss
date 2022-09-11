@@ -1,0 +1,40 @@
+$red: #c0362c;
+$sub-red: #74201A;
+$light-red: #D55248;
+$lighter-red: #D96159;
+
+.footer {
+    width: 100%;
+    background-color: $red;
+    font-family: sans-serif;
+}
+
+.back-to-top {
+    background-color: $light-red;
+    color: white;
+    padding-block: 1em;
+}
+
+.back-to-top:hover {
+    cursor: default;
+    background-color: $lighter-red;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+        width: 300px;
+        height: 300px;
+        padding-block: 1em;
+    }
+}
+
+.final-line {
+    font-size: 12px;
+    background-color: $sub-red;
+    color: white;
+    padding: 1em;
+}
