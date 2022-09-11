@@ -1,6 +1,14 @@
 import React from "react";
 import redLogo from '../../images/logos/cable-logo-red.png';
 import './page.scss';
+import WhoWeAre from "../tabs/who-we-are/whoWeAre";
+import TheStory from "../tabs/the-story/theStory";
+import Characters from "../tabs/characters/characters";
+import Attributes from "../tabs/attributes/attributes";
+import Logo from "../tabs/logo/logo";
+import Artwork from "../tabs/artwork/artwork";
+import Portfolio from "../tabs/portfolio/portfolio";
+import Music from "../tabs/music/music";
 
 class Page extends React.Component {
     props() {
@@ -90,29 +98,53 @@ class Page extends React.Component {
                     </ul>
                     </a>
                     <div className="tab-container">
-                        <div id="who-we-are-tab" className="active-tab">
-                            <h1>Who we are</h1>
+                        <div
+                            id="who-we-are-tab"
+                            className="tab active-tab"
+                        >
+                            <WhoWeAre />
                         </div>
-                        <div id="the-story-tab">
-                            <h1>The Story</h1>
+                        <div
+                            id="the-story-tab"
+                            className="tab"
+                        >
+                            <TheStory />
                         </div>
-                        <div id="characters-tab">
-                            <h1>Characters</h1>
+                        <div
+                            id="characters-tab"
+                            className="tab"
+                        >
+                            <Characters />
                         </div>
-                        <div id="attributes-tab">
-                            <h1>Attributes</h1>
+                        <div
+                            id="attributes-tab"
+                            className="tab"
+                        >
+                            <Attributes />
                         </div>
-                        <div id="logo-tab">
-                            <h1>Logo</h1>
+                        <div
+                            id="logo-tab"
+                            className="tab"
+                        >
+                            <Logo />
                         </div>
-                        <div id="artwork-tab">
-                            <h1>Artwork</h1>
+                        <div
+                            id="artwork-tab"
+                            className="tab"
+                        >
+                            <Artwork />
                         </div>
-                        <div id="music-tab">
-                            <h1>Music</h1>
+                        <div
+                            id="music-tab"
+                            className="tab"
+                        >
+                            <Music />
                         </div>
-                        <div id="portfolio-tab">
-                            <h1>Portfolio</h1>
+                        <div
+                            id="portfolio-tab"
+                            className="tab"
+                        >
+                            <Portfolio />
                         </div>
                     </div>
                 </div>    

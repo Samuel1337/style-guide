@@ -91,20 +91,12 @@ ul {
     padding-inline: 2em;
 }
 
-.tab-container div {
+.tab {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     visibility: hidden;
     height: 0px;
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h1:hover {
-        cursor: default;
-    }
 }
 
 .active-li {

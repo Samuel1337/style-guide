@@ -1,0 +1,15 @@
+.tab-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    h1:hover {
+        cursor: default;
+    }
+}
