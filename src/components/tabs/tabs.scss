@@ -127,3 +127,29 @@ $blue: #255999;
 b {
     font-weight: 600;
 }
+
+.character-line {
+    display: flex;
+}
+
+.character-tile {
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-body .character-photo {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 0.2em;
+}
+
+.tab-body .character-name {
+    width: 100%;
+    text-align: center;
+}
