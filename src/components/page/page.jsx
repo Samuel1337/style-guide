@@ -9,7 +9,7 @@ import Attributes from "../tabs/attributes/attributes";
 import Logo from "../tabs/logo/logo";
 import Artwork from "../tabs/artwork/artwork";
 import Portfolio from "../tabs/portfolio/portfolio";
-import Music from "../tabs/music/music";
+import Photos from "../tabs/photos/photos";
 
 
 class Page extends React.Component {
@@ -86,10 +86,10 @@ class Page extends React.Component {
                             Artwork
                         </li>
                         <li
-                            id="music-li"
-                            onClick={()=>this.switchTabs("music")}
+                            id="photos-li"
+                            onClick={()=>this.switchTabs("photos")}
                         >
-                            Music
+                            Photos
                         </li>
                         <li
                             id="portfolio-li"
@@ -118,8 +118,8 @@ class Page extends React.Component {
                         <div id="artwork-tab" className="tab">
                             <Artwork />
                         </div>
-                        <div id="music-tab" className="tab">
-                            <Music />
+                        <div id="photos-tab" className="tab">
+                            <Photos />
                         </div>
                         <div id="portfolio-tab" className="tab">
                             <Portfolio />
