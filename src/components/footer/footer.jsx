@@ -7,10 +7,6 @@ class Footer extends React.Component {
         this.scrollUp = this.scrollUp.bind(this);
     }
 
-    scrollUp() {
-        window.scrollTo(0, 0);
-    }
-
     render() {
         return (
             <div className="footer bottom">

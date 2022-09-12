@@ -35,10 +35,6 @@ class Page extends React.Component {
         oldActiveTab.classList.remove("active-tab");   
     }
 
-    // scrollUp() {
-    //     window.scrollTo(0, 0);
-    // }
-
     render() {
         return (
             <div className="page">

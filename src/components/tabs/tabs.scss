@@ -1,3 +1,7 @@
+$red: #C0372C;
+$yellow: #FEBF10;
+$blue: #255999;
+
 .tab-body {
     display: flex;
     flex-direction: column;
@@ -5,8 +9,13 @@
     width: 100%;
 
     h1 {
-        font-size: 40px;
-        margin-block: 0.5em;
+        font-size: 48px;
+        border-bottom: 1px solid #e7e7e7;
+        padding-bottom: 0.5em;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        text-align: start;
+        width: 100%;
     }
 
     h1:hover {
@@ -19,6 +28,8 @@
         line-height: 1.75em;
         text-align:justify;
         margin-bottom: 2em;
+        width: 100%;
+
     }
 
     img {
@@ -26,4 +37,93 @@
         margin-bottom: 2em;
     }
 }
+
+.logos-display {
+    display: flex;
+    margin-bottom: 1em;
+
+    img { 
+        width: 50%;
+        height: 50%;
+        margin: 0;
+        padding: 0.5em;
+    }
     
+    .secondary-logos {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.color-swatches {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    * {
+        margin: 1em;
+        border-radius: 5%;
+        color: rgba(255, 255, 255, 0.5);
+        transition-duration: 0.5s;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 7em;
+        
+        .color-code {
+            text-align: center;
+        }
+        
+        .color-name {
+            text-align: center;
+            font-family: 'Poppins', 'sans serif';
+            font-size: 12px;
+        }
+    }
+
+    
+    
+    .red-swatch {
+        background-color: $red;
+    }
+    
+    .red-swatch:hover {
+        cursor: pointer;
+        background-color:#fe5d51;
+    }
+    
+    .yellow-swatch {
+        background-color: $yellow;
+    }
+    
+    .yellow-swatch:hover {
+        cursor: pointer;
+        background-color:#fcda7d;
+    }
+    
+    .blue-swatch {
+        background-color: $blue;
+    }
+        
+    .blue-swatch:hover {
+        cursor: pointer;
+        background-color:#447bbd;
+    }
+}
+
+.tab-body .artwork {
+    margin-bottom: 0;
+}
+
+.tab-body .artwork-credits {
+    font-family: 'Poppins', 'sans serif';
+    font-size: 18px;
+    margin-bottom: 1em;
+    font-weight: 200;
+}
+
+b {
+    font-weight: 600;
+}
