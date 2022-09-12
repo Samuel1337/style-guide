@@ -82,8 +82,7 @@ ul {
         font-family: 'Poppins', 'sans serif';
         font-size: 24px;
         padding-block: 0.6em;
-        padding-right: 2em;
-        padding-left: 1em;
+        padding-inline: 2em;
         white-space: nowrap;
         transition-duration: 0.25s;
         color: $gunmetal;
@@ -96,7 +95,7 @@ ul {
 
 .tab-container {
     width: 100%;
-    padding-inline: 2em;
+    padding-inline: 6em;
 }
 
 .tab {

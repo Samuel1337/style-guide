@@ -35,15 +35,17 @@ class Page extends React.Component {
         oldActiveTab.classList.remove("active-tab");   
     }
 
-    scrollUp() {
-        window.scrollTo(0, 0);
-    }
+    // scrollUp() {
+    //     window.scrollTo(0, 0);
+    // }
 
     render() {
         return (
             <div className="page">
-                <div className="page-header" onClick={this.scrollUp}>
-                    <h1><span>C</span>ABLE, THE <span>G</span>OLDEN <span>G</span>ATE <span>M</span>USICAL</h1>
+                <div className="page-header">
+                    <a href="#home">
+                        <h1><span>C</span>ABLE, THE <span>G</span>OLDEN <span>G</span>ATE <span>M</span>USICAL</h1>
+                    </a>
                 </div>
                 {/* <img src={detail} className="detail" /> */}
                 <div className="fog" />
