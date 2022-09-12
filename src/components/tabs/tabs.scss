@@ -153,3 +153,44 @@ b {
     width: 100%;
     text-align: center;
 }
+
+.attributes-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+    .attributes-column {
+        border: 0;
+        width: 100%;
+
+        li {
+            font-family: 'Merriweather', 'serif';
+            line-height: 150%;
+        }
+
+        li:hover {
+            cursor: default;
+            opacity: 1;
+        }
+    }
+}
+
+h2 {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.quote {
+
+}
+
+.tab-body .author {
+    text-align: end;
+    font-size: 1em;
+    // width: 80%;
+}
+
+.tab-body .center {
+    text-align: center;
+}

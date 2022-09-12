@@ -2,7 +2,7 @@ import React from "react";
 import redLogo from '../../images/logos/cable-logo-red.png';
 import detail from '../../images/details/cable-website-novel-background.png';
 import './page.scss';
-import WhoWeAre from "../tabs/who-we-are/whoWeAre";
+import Introduction from "../tabs/introduction/introduction";
 import TheStory from "../tabs/the-story/theStory";
 import Characters from "../tabs/characters/characters";
 import Attributes from "../tabs/attributes/attributes";
@@ -37,23 +37,23 @@ class Page extends React.Component {
 
     render() {
         return (
+            
             <div className="page">
                 <div className="page-header">
                     <a href="#home">
                         <h1><span>C</span>ABLE, THE <span>G</span>OLDEN <span>G</span>ATE <span>M</span>USICAL</h1>
                     </a>
                 </div>
-                {/* <img src={detail} className="detail" /> */}
                 <div className="fog" />
                 <div className="page-container">
                     <a href="#home">
                     <ul className="list">
                         <li
-                            id="who-we-are-li"
+                            id="introduction-li"
                             className="active-li"
-                            onClick={()=>this.switchTabs("who-we-are")}
+                            onClick={()=>this.switchTabs("introduction")}
                         >
-                            Who we are
+                            Introduction
                         </li>
                         <li
                             id="the-story-li"
@@ -91,17 +91,17 @@ class Page extends React.Component {
                         >
                             Photos
                         </li>
-                        <li
+                        {/* <li
                             id="portfolio-li"
                             onClick={()=>this.switchTabs("portfolio")}
                         >
                             Portfolio
-                        </li>
+                        </li> */}
                     </ul>
                     </a>
                     <div className="tab-container">
-                        <div id="who-we-are-tab" className="tab active-tab">
-                            <WhoWeAre />
+                        <div id="introduction-tab" className="tab active-tab">
+                            <Introduction />
                         </div>
                         <div id="the-story-tab" className="tab">
                             <TheStory />
@@ -121,9 +121,9 @@ class Page extends React.Component {
                         <div id="photos-tab" className="tab">
                             <Photos />
                         </div>
-                        <div id="portfolio-tab" className="tab">
+                        {/* <div id="portfolio-tab" className="tab">
                             <Portfolio />
-                        </div>
+                        </div> */}
                     </div>
                 </div>    
             </div>

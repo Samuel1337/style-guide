@@ -9,7 +9,22 @@ class Portfolio extends React.Component {
     render() {
         return (
             <div className="tab-body">
-                <h1>Portfolio</h1>
+                <h1>Books</h1>
+
+                <div className="portfolio-line">
+                    <div className="portfolio-tile">
+                        <p className="portfolio-title"></p>
+                        <p className="portfolio-subtitle"></p>
+                    </div>
+                    <div className="portfolio-tile">
+                        <p className="portfolio-title"></p>
+                        <p className="portfolio-subtitle"></p>
+                    </div>
+                    <div className="portfolio-tile">
+                        <p className="portfolio-title"></p>
+                        <p className="portfolio-subtitle"></p>
+                    </div>
+                </div>
             </div>
         )
     }
