@@ -14,9 +14,11 @@ class Footer extends React.Component {
     render() {
         return (
             <div className="footer bottom">
-                <div className="back-to-top" onClick={this.scrollUp}>
-                    <span>B</span>ACK TO TOP
-                </div>
+                <a href="#home">
+                    <div className="back-to-top">
+                        <span>B</span>ACK TO TOP
+                    </div>
+                </a>
                 <div className="logo-container">
                     <img src={redLogo} />
                 </div>
