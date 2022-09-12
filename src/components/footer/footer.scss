@@ -11,9 +11,17 @@ $eerie-black: #1a1d23;
 .footer {
     width: 100%;
     background-color: $gunmetal;
+    margin-top: auto;
+    bottom: 0;
+    margin-bottom: 0;
+    height: 400px;
     font-family: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
+}
+
+.bottom {
+    // bottom: 0px;
 }
 
 .back-to-top {

@@ -1,5 +1,6 @@
 import React from "react";
 import redLogo from '../../images/logos/cable-logo-red.png';
+import detail from '../../images/details/cable-website-novel-background.png';
 import './page.scss';
 import WhoWeAre from "../tabs/who-we-are/whoWeAre";
 import TheStory from "../tabs/the-story/theStory";
@@ -10,26 +11,28 @@ import Artwork from "../tabs/artwork/artwork";
 import Portfolio from "../tabs/portfolio/portfolio";
 import Music from "../tabs/music/music";
 
+
 class Page extends React.Component {
     props() {
         this.scrollUp = this.scrollUp.bind(this);
         this.switchTabs = this.switchTabs.bind(this);
+        this.openTab = this.openTab.bind(this);
     }
 
     switchTabs(id) {
         const newActiveLi = document.getElementById(id + "-li");
         const newActiveTab = document.getElementById(id + "-tab");
-        
+
         const oldActiveLi = document.querySelector(".active-li");
         const oldActiveTab = document.querySelector(".active-tab");
-
+        
         if (newActiveLi.id === oldActiveLi.id) return null;
 
         newActiveLi.classList.add("active-li");
         newActiveTab.classList.add("active-tab");
 
         oldActiveLi.classList.remove("active-li");
-        oldActiveTab.classList.remove("active-tab");
+        oldActiveTab.classList.remove("active-tab");   
     }
 
     scrollUp() {
@@ -42,6 +45,7 @@ class Page extends React.Component {
                 <div className="page-header" onClick={this.scrollUp}>
                     <h1><span>C</span>ABLE, THE <span>G</span>OLDEN <span>G</span>ATE <span>M</span>USICAL</h1>
                 </div>
+                {/* <img src={detail} className="detail" /> */}
                 <div className="fog" />
                 <div className="page-container">
                     <a href="#home">
@@ -98,52 +102,28 @@ class Page extends React.Component {
                     </ul>
                     </a>
                     <div className="tab-container">
-                        <div
-                            id="who-we-are-tab"
-                            className="tab active-tab"
-                        >
+                        <div id="who-we-are-tab" className="tab active-tab">
                             <WhoWeAre />
                         </div>
-                        <div
-                            id="the-story-tab"
-                            className="tab"
-                        >
+                        <div id="the-story-tab" className="tab">
                             <TheStory />
                         </div>
-                        <div
-                            id="characters-tab"
-                            className="tab"
-                        >
+                        <div id="characters-tab" className="tab">
                             <Characters />
                         </div>
-                        <div
-                            id="attributes-tab"
-                            className="tab"
-                        >
+                        <div id="attributes-tab" className="tab">
                             <Attributes />
                         </div>
-                        <div
-                            id="logo-tab"
-                            className="tab"
-                        >
+                        <div id="logo-tab" className="tab">
                             <Logo />
                         </div>
-                        <div
-                            id="artwork-tab"
-                            className="tab"
-                        >
+                        <div id="artwork-tab" className="tab">
                             <Artwork />
                         </div>
-                        <div
-                            id="music-tab"
-                            className="tab"
-                        >
+                        <div id="music-tab" className="tab">
                             <Music />
                         </div>
-                        <div
-                            id="portfolio-tab"
-                            className="tab"
-                        >
+                        <div id="portfolio-tab" className="tab">
                             <Portfolio />
                         </div>
                     </div>
