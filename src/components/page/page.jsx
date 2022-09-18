@@ -28,11 +28,11 @@ class Page extends React.Component {
         
         if (newActiveLi.id === oldActiveLi.id) return null;
 
-        newActiveLi.classList.add("active-li");
-        newActiveTab.classList.add("active-tab");
-
         oldActiveLi.classList.remove("active-li");
         oldActiveTab.classList.remove("active-tab");   
+
+        newActiveLi.classList.add("active-li");
+        newActiveTab.classList.add("active-tab");
     }
 
     render() {
